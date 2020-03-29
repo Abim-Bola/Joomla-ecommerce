@@ -1,0 +1,70 @@
+.container{
+	margin: auto;
+	margin-top: 40px;
+	background-color: lightgrey;
+	color: black;	
+	width: 350px;
+	align-content: center;
+	padding-top: 20px;
+	padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+		}
+
+		.container2{
+			width: 400px;
+	padding-left: 20px;
+	padding-right: 5px;
+
+		}
+
+
+		.login{
+			font-weight: normal;
+			font-family: sans-serif;
+			font-size: 18px;
+		}
+
+
+ 		p{
+ 			font-weight: bold;
+ 			font-size: 30px;
+ 			/*text-align: center;*/
+ 			margin: auto;
+ 			padding-bottom: 10px;
+ 		}
+
+
+		.name {
+			display: inline-block;
+			width: 140px;
+			height: 30px;
+			border-radius: 5px;
+			margin: 5px;
+            }
+            .select{ 
+            	margin: 5px;
+             }
+		 .information, .signup{
+			width: 300px;
+			height: 30px;
+			border-radius: 5px;
+			margin:5px;
+
+		}
+
+		.select-item{
+			width: 50;
+			height: 30;
+		}
+
+		.submit{
+			border-radius: 10px;
+			margin:5px;
+		}
+
+		.signup{
+			background-color: blue;
+			color: white;
+			font-weight: bold;
+		}

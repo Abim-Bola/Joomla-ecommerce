@@ -1,0 +1,64 @@
+*{
+			margin: 0;
+			padding: 0;
+		}
+
+.container{
+	background-color: black;
+	color: white;
+	margin: auto;
+	margin-top: 40px;
+	background-color: lightgrey;
+	color: black;	
+	width: 350px;
+	align-content: center;
+	padding-top: 20px;
+	padding-left: 15px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+p{
+	font-weight: bold;
+ 			font-size: 30px;
+ 			text-align: center;
+ 			margin: auto;
+ 			padding-bottom: 10px;
+}
+
+.info, .login{
+			width: 300px;
+			height: 30px;
+			border-radius: 5px;
+			margin:5px;
+
+		}
+		.login{
+			background-color: blue;
+			color: white;
+			font-weight: bold;
+		}
+
+		.header{
+	width: 100%;
+	height: 45px;
+	background-color: navy;
+
+}
+
+.header, li{
+	
+	text-align: center;
+	display: inline-block;
+	padding: 10px;
+	margin: auto;
+	font-family: "Amazon Ember",Arial,sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+
+
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
