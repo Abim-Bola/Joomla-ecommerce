@@ -1,3 +1,8 @@
+<?php
+$db = mysqli_connect("localhost", "root", "", "ecommerce") or die (mysqli_error($db));
+$select = mysqli_query($db, "SELECT * FROM product_category") or die(mysqli_error($db));
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,13 +24,14 @@
 			<li><a href="cart.php">Cart</a></li>
 		</ul>
 		</div>
-
-
+<!-- 
+main image on the webpage -->
 <div class="bigimage">
 	<img  class="mainimage" src="../images/mainimage.jpg">
 	
 </div>
 
+<!-- small icons and text with them -->
 <div class="advert">
 	<div class="ad">
 		<div class="adverts"><img class="icons" src="../images/jumiaglobal.png"><p style="text-align: center; color: white; padding-top: 10px; margin-bottom: 40px;">Delivery</p></div>
@@ -35,40 +41,33 @@
 	</div>
 </div>
 
+<!-- welcome text -->
 <div>
 		<h1 style="text-align: center; font-family: Amazon Ember,Arial,sans-serif; margin-top: 30px; font-size: 80px;color: /*#2F4F4F*/ 	#708090;">Welcome to Joomla.com</h1>
-		<!-- <p style="text-align: center; font-family: Amazon Ember,Arial,sans-serif; margin-top: 20px; font-size: 30px;">We ship products around the world</p> -->
+	
 </div>
 
 <div>
 		
-		<p style="text-align: center; margin-top: 20px; font-size: 30px;">We ship products around the world</p>
+		<p style="text-align: center; color:#708090; margin-top: 20px; font-size: 30px;">We ship products around the world</p>
 </div>
 
-<div class="cream">
-           <div class="center">
- 			<div class="small"> <a href="viewfashion.php"><img src="../images/fashion/fashion1.jpg" width="150" height="250" ><div class="textcontainer"><div class="boxtext" style="left: 10px;
-        right: 10px;"><span>Fashion</span></div></div></a></div>
- 			<div class="small"> <a href="viewgroceries.php"><img src="../images/groceries/grocery.jpg" width="150" height="250"><div class="textcontainer"><div class="boxtext" style="left: 10px;
-        right: 10px;"><span>Groceries</span></div></div></a></div>
- 			<div class="small"> <a href="viewcosmetics.php"><img src="../images/cosmetics/cosmetics.jpg" width="150" height="250"><div class="textcontainer"><div class="boxtext" style="left: 10px;
-        right: 10px;"><span>Cosmetics</span></div></div></a></div>
- 			<div class="small"> <a href="viewfurniture.php"><img src="../images/furnitures/furniture.jpg" width="150" height="250"><div class="textcontainer"><div class="boxtext" style="left: 15px;
-        right: 10px;"><span>Furniture</span></div></div></a></div>
- 			<div class="small"> <a href="viewelectronics.php"><img src="../images/electronics/electronics2.png" width="150" height="250"><div class="textcontainer"><div class="boxtext"><span>Electronics</span></div></div></a></div>
- 			<div class="small"> <a href="viewkitchenutensils.php"><img src="../images/kitchenutensils/kitchen2.png" width="150" height="250"><div class="textcontainer"><div class="boxtext" style="left: 10px;
-        right: 10px;"><span>Utensils</span></div></div></a></div>
- 			<div class="small"> <a href="viewautomobile.php"><img src="../images/automobiles/automobile.jpg" width="150" height="250"><div class="textcontainer"><div class="boxtext"><span>Automobile</span></div></div></a></div>
- 		</div>
- 	</div>
+
+<!-- images according to categories -->
+<?php while($product = mysqli_fetch_array($select)) { ?>
+ 		<div class="small"> 
+		 <!-- doing it this way with this hyperlink will redirect to another page displaying
+		  all the products no matter which category they pick -->
+			 <a href="viewproducts.php?id=<?php echo $product[0]; ?>">
+			 <img src="../images/index/<?php echo $product[1] . ".jpg" ;?>" width="150" height="250">
+			 <div class="textcontainer"><div class="boxtext" style="left: 10px; right: 10px;">
+			<span><?php echo $product[1]; ?></span>
+		</div>
+		</div>
+		</a>
+		</div>
  			
-    
-
-    
- 			
-
-
-	<div class="subimages"></div>
+	 <?php } ?>
 
 
 </div>

@@ -1,7 +1,7 @@
 <?php
 include('../db/ecomconfig.php');
 session_start();
-$merchant_id = $_SESSION['merchant_id'];
+$customer_id = $_SESSION['customer_id'];
 $username = $_SESSION['username'];
 ?>
 
@@ -11,6 +11,14 @@ $username = $_SESSION['username'];
 	<title></thitle>
 </head>
 <body>
+<?php 
+	//initialize the error message variable
+	$message = "";
+	$product = mqsli_query($db, "SELECT * FROM product_upload WHERE product_id = 'product_id')
+
+
+?>
+
 
 	<?php
 if(!empty($_SESSION["shopping_cart"])) {

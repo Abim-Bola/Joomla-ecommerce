@@ -93,10 +93,10 @@ if(empty($error)){
 				<ul>
 					<li><a href="../public/index.php">Home</a></li>
 					<li><a href="../merchants/merchantsignup.php">Sell on Joomla</a></li>
-					<li><a href="uploadproducts.php">Upload Products</a></li>
+					<!-- <li><a href="uploadproducts.php">Upload Products</a></li> -->
 					<li><a href="../customers/customer_form.php">Account</a></li>
 					<li><a href="../customers/customer_form.php">Help</a></li>
-					<li><a href="">Cart</a></li>
+					<li><a href="../public/cart.php">Cart</a></li>
 				</ul>
 </div>
 

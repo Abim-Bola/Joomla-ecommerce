@@ -15,6 +15,19 @@
 
 </head>
 <body>
+	<div class="heading">
+	
+		
+		<div class="header">
+			<ul>
+			<li><a href="../public/index.php">Home</a></li>
+			<li><a href="../merchants/merchantsignup.php">Sell on Joomla</a></li>
+			<!-- <li><a href="">Category</a></li> -->
+			<li><a href="../customers/customer_form.php">Account</a></li>
+			<li><a href="../customers/customer_form.php">Help</a></li>
+			<li><a href="../public/cart.php">Cart</a></li>
+		 	</ul>
+		</div>
 
 	
 

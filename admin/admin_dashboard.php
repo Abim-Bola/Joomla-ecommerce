@@ -12,7 +12,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>View Customer</title>
+	<title>Admin Dashboard</title>
 	<link rel="stylesheet" type="text/css" href="../css/view_customer.css">
 </head>
 <body>
